@@ -1,15 +1,18 @@
 
 <?php  
 
-$moeda = simplexml_load_file("http://developers.agenciaideias.com.br/cotacoes/xml");
+$moeda = simplexml_load_file("http://developers.agenciaideias.com.br/cotacoes/xml"); // Carrega o XML
 
-	/*cotaÁ„o dolar*/
-$cotacao = $moeda->dolar->cotacao;
+	/*cota√ß√£o dolar*/
+	
+	//Acessa o objeto
+$cotacao = $moeda->dolar->cotacao; 
 $variacao = $moeda->dolar->variacao;
 
- echo " Ol· anderson, a cotaÁ„o do Dolar para hoje est·".$cotacao." com variaÁ„o de: ".$variacao."<br>";	
+//imprime os valores.
+ echo " Ol√° anderson, a cota√ß√£o do Dolar para hoje est√°".$cotacao." com varia√ß√£o de: ".$variacao."<br>";	
 
-	/*fim cotaÁ„o dolar*/
+	/*fim cota√ß√£o dolar*/
 
 	
  ?>
